@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public API Playground</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Public API Playground</h1>
+        <p>Explore data from across the web</p>
+    </header>
+
+    <main class="container">
+        <!-- Dog Finder Card -->
+        <section class="card" id="dog-card">
+            <div class="card-header">
+                <h2>Dog Finder</h2>
+            </div>
+            <div class="card-body">
+                <div id="dog-display" class="display-area">
+                    <p class="placeholder-text">Click "Get Dog" to find a furry friend!</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="get-dog-btn" class="btn primary">Get Dog</button>
+                <button id="copy-dog-url-btn" class="btn secondary" disabled>Copy URL</button>
+            </div>
+        </section>
+
+        <!-- Joke Generator Card -->
+        <section class="card" id="joke-card">
+            <div class="card-header">
+                <h2>Joke Generator</h2>
+            </div>
+            <div class="card-body">
+                <div id="joke-display" class="display-area">
+                    <p class="placeholder-text">Ready for a laugh?</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="get-joke-btn" class="btn primary">Get Joke</button>
+                <button id="next-joke-btn" class="btn secondary" style="display:none;">Next Joke</button>
+            </div>
+        </section>
+
+        <!-- Random User Profile Card -->
+        <section class="card" id="user-card">
+            <div class="card-header">
+                <h2>Random User Profile</h2>
+            </div>
+            <div class="card-body">
+                <div id="user-display" class="display-area">
+                    <p class="placeholder-text">Meet someone new!</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="get-user-btn" class="btn primary">Get User</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Public API Playground</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
